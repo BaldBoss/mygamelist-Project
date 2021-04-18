@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>Game Tittle:</td>
+                <td>
+                    <input type="text" placeholder="Enter Title Name" name="game_Name" value="<%= game.gameName %>" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Game Console:</td>
+                <td>
+                    <input type="text" placeholder="Enter Game Console" name="game_Console" value="<%= game.Console %>" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Img Address:</td>
+                <td>
+                    <input type="text" placeholder="Enter Game Img Address" name="game_imgAddess" value="<%= game.imgAddress %>" required>
+                </td>
+            </tr>
+            <tr>
+                <td><button>Submit Update</button></td>
+                
+            </tr>
+            
+        </table>
+
+    </form>
+</body>
+</html>
