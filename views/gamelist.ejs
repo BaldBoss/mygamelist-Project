@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         
             <a class="navbar-brand" href="#"><img src="/img/mygamelistLogo.png" width="80" height="80" alt="" srcset=""></a>
@@ -35,13 +36,36 @@
         </div>
         
       </nav>
-    <%for(var i=0; i<game.length;i++) { %>
-        <img src="<%= game[i].imgAddress %>" height="500px" width="800px">
-        <p style="color: aquamarine;"><%= game[i].gameName %></p>
-        <p><%= game[i]._id %></p>
-        <a href="/editGame/<%= game[i]._id %>">Edit</a>
-    <%}%>
-    <h1> here</h1>
+  <!-- Header -->
+    <div class="banner">
+      <h1>Your Game List</h1>
+      <p>Record All Your Game!!</p>
+    </div>
+  <!-- game list card -->
+    <div class="container">
+      <div class="d-flex flex-wrap">
+        <%for(var i=0; i<game.length;i++) { %>
+            <div class="card mb-3 h-100" style="width: 20rem;">
+              <img class="card-img-top" src="<%= game[i].imgAddress %>" alt="Card image cap" height="400px">
+              <div class="card-body">
+                <h5 class="card-title"><%= game[i].gameName %></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Game Console: <%= game[i].Console %> </li>
+                <li class="list-group-item">Release Date: </li>
+                <li class="list-group-item">Create by: </li>
+              </ul>
+              <div class="card-body">
+                
+                <button type="button" class="btn btn-primary"><a href="/editGame/<%= game[i]._id %>" class="card-link text-white">Card link</a></button>
+                
+                <button type="button" class="btn btn-warning"><a href="#" class="card-link text-white">Another link</a></button>
+              </div>
+            </div>  
+          <%}%>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
