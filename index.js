@@ -65,6 +65,11 @@ app.post("/editGame/:id", function(req, res){
     })
 })
 
+// add Game
+app.get("/addGame", function(req,res){
+    res.render("addGame");
+})
+
 app.get("/",(req,res)=>{
     res.send("hello world");
 });
