@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         
             <a class="navbar-brand" href="#"><img src="/img/mygamelistLogo.png" width="80" height="80" alt="" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +42,10 @@
       <p>Record All Your Game!!</p>
     </div>
   <!-- game list card -->
-    <div class="container">
-      <div class="d-flex flex-wrap">
+    <div class="container-warp">
+      <div class="justify-content-center d-flex flex-wrap">
         <%for(var i=0; i<game.length;i++) { %>
-            <div class="card mb-3 h-100" style="width: 20rem;">
+            <div class="card border-info mb-3 h-100" style="width: 20rem;">
               <img class="card-img-top" src="<%= game[i].imgAddress %>" alt="Card image cap" height="400px">
               <div class="card-body">
                 <h5 class="card-title"><%= game[i].gameName %></h5>
@@ -56,12 +56,12 @@
                 <li class="list-group-item">Release Date: </li>
                 <li class="list-group-item">Create by: </li>
               </ul>
-              <div class="card-body">
+              
                 
-                <button type="button" class="btn btn-primary"><a href="/editGame/<%= game[i]._id %>" class="card-link text-white">Card link</a></button>
+                <button type="button" class="btn btn-primary"><a href="/editGame/<%= game[i]._id %>" class="card-link text-white">Edit</a></button>
                 
-                <button type="button" class="btn btn-warning"><a href="#" class="card-link text-white">Another link</a></button>
-              </div>
+                <button type="button" class="btn btn-warning"><a href="/delete/<%= game[i]._id %>" class="card-link text-white">Delete</a></button>
+              
             </div>  
           <%}%>
       </div>

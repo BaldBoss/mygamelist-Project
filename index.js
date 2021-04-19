@@ -69,6 +69,26 @@ app.post("/editGame/:id", function(req, res){
 app.get("/addGame", function(req,res){
     res.render("addGame");
 })
+app.post("/addGame", function(req,res){
+    let newGame = new Game({
+            gameName: req.body.gameTitle,
+            Console: req.body.consoleType,
+            imgAddress: req.body.imgAddress
+        })
+        newGame.save();
+        res.redirect("gamelist");
+})
+
+// Delete game by id
+app.get("/delete/:id",function(req, res){
+    Game.findByIdAndDelete(req.params.id, function(err,project){
+        if(err){
+            res.redirect("/gamelist")
+        }else{
+            res.redirect("/gamelist")
+        }
+    })
+})
 
 app.get("/",(req,res)=>{
     res.send("hello world");

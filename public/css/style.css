@@ -3,6 +3,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  background-color: rgb(67, 73, 80);
 }
 .navbar a {
   margin-left: 50px;
@@ -12,6 +13,13 @@ body {
 }
 .card {
   margin: 20px 20px 20px 20px;
+  background-image: url("https://www.pngkey.com/png/full/485-4853367_download-this-sheet-background-rpg-maker-mv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-body {
+  overflow: auto;
+  height: 200px;
 }
 .banner {
   width: 100%;
@@ -19,4 +27,12 @@ body {
   background-image: url("/img/2738.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container-warp {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
