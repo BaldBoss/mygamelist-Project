@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyGameList- List of Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
@@ -51,19 +51,19 @@
       </nav>
   <!-- Header -->
     <div class="banner">
-      <h1>Your Game List</h1>
+      <h1 class="">Your Game List</h1>
       <p>Record All Your Game!!</p>
     </div>
   <!-- game list card -->
-  <form class="container d-flex">
-    <input class="form-control me-2 bg-light border-dark" type="search" id="myInput" placeholder="Search" aria-label="Search">
+  <form >
+    <input class="form-control me-2  text-center" type="search" id="myInput" placeholder="Search For Game" aria-label="Search">
   </form>
     <div class="container-warp">
       <div class="justify-content-center d-flex flex-wrap"id="cardSearch">
         <%for(var i=0; i<game.length;i++) { %>
             <div class="card border-info mb-3 h-100" >
               <img class="card-img-top" src="<%= game[i].imgAddress %>" alt="Card image cap" height="400px">
-              <div class="card-body ">
+              <div class="card-body card_body ">
                 <h5 class="card-title"><%= game[i].gameName %></h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <ul class="list-group list-group-flush">

@@ -1,0 +1,92 @@
+.header-background {
+  width: 100%;
+  height: auto;
+  min-height: 900px;
+  margin-bottom: 50px;
+  padding-bottom: 70px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(50, 58, 69, 0.9))
+  );
+  background-image: linear-gradient(
+      180deg,
+      rgba(50, 58, 69, 0.55),
+      rgba(50, 58, 69, 0.75)
+    ),
+    url("/img/indexbanner.jpg");
+  background-position: 0px 0px, 100% 50%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  white-space: normal;
+  object-fit: fill;
+  -o-object-fit: fill;
+  position: static;
+  display: block;
+  overflow: visible;
+  top: 0;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-fkex-direction: column;
+  .sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 20px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(12, 32, 59, 0.5);
+    .navbarIndex {
+      .navbar-nav {
+        .nav-item {
+          padding: 1.4rem 1rem;
+          font-size: 1.2rem;
+          position: relative;
+          .active {
+            color: #e74c3c !important;
+          }
+        }
+      }
+      a {
+        margin-left: 50px;
+      }
+      ul {
+        margin: 0 auto;
+        li {
+          a:hover {
+            color: dimgrey !important;
+          }
+        }
+      }
+    }
+  }
+  .heading {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    margin-top: 200px;
+    margin-bottom: 8px;
+    min-height: 100px;
+    animation: headerflyin 2s ease 0s 1 normal none;
+  }
+  @keyframes headerflyin {
+    0.0% {
+      transform: rotate(0) translate(-1000px);
+    }
+    100% {
+      transform: rotate(0) translate(0px);
+    }
+  }
+}

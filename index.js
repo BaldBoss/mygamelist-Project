@@ -76,7 +76,7 @@ app.post("/addGame", function(req,res){
             imgAddress: req.body.imgAddress
         })
         newGame.save();
-        res.redirect("gamelist");
+        res.redirect("/gamelist");
 })
 
 // Delete game by id
@@ -91,7 +91,7 @@ app.get("/delete/:id",function(req, res){
 })
 
 app.get("/",(req,res)=>{
-    res.send("hello world");
+    res.render("index");
 });
 app.listen(3000, function(){
     console.log("server is running on 3000");
