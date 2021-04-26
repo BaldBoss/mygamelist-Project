@@ -14,7 +14,6 @@ body {
   width: 100%;
   height: auto;
   min-height: 900px;
-  margin-bottom: 50px;
   padding-bottom: 70px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 69, 0.55)), to(rgba(50, 58, 69, 0.75))), url("/img/indexbanner.jpg");
   background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.75)), url("/img/indexbanner.jpg");
@@ -118,5 +117,93 @@ body {
   background-attachment: scroll, scroll;
   object-fit: cover;
   -o-object-fit: cover;
+}
+
+#aboutus .row .column-right .section-title {
+  margin-top: 80px;
+  padding: 5rem 2rem 0rem 5rem;
+  font-size: 2.8rem;
+  color: #7d90c9;
+  font-weight: 500;
+}
+
+#aboutus .row .column-right p {
+  margin-top: 15px;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.1rem;
+  color: #b1b4bd;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#services p {
+  margin-top: 15px;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.1rem;
+  color: #b1b4bd;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#services h1 {
+  color: #7d90c9;
+}
+
+#services .service-right {
+  min-height: 750px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/services.jpeg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/services.jpeg");
+  background-position: 0px 0px, 100% 50%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+#services .service-section {
+  margin-top: 20px;
+  padding: 5rem 2rem 0rem 5rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#services .service-1 .service-title1 {
+  padding: 1rem 2rem 1rem 5rem;
+  font-size: 1.8rem;
+}
+
+#services .service-1 p {
+  margin-top: 15px;
+  padding: 0rem 1rem 1rem 5rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#services .service-1 .fas {
+  font-size: 4rem;
+  color: #e74c3c;
+  padding: 3rem 2rem 1rem 5rem;
+}
+
+#services .service-2 .service-title2 {
+  padding: 1rem 5rem 1rem 1rem;
+  font-size: 1.8rem;
+}
+
+#services .service-2 p {
+  margin-top: 15px;
+  padding: 0rem 5rem 1rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#services .service-2 .fas {
+  font-size: 4rem;
+  color: #e74c3c;
+  padding: 3rem 5rem 1rem 1rem;
 }
 /*# sourceMappingURL=index.css.map */

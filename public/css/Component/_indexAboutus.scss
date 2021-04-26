@@ -21,5 +21,22 @@
       object-fit: cover;
       -o-object-fit: cover;
     }
+    .column-right {
+      .section-title {
+        margin-top: 80px;
+        padding: 5rem 2rem 0rem 5rem;
+        font-size: 2.8rem;
+        color: #7d90c9;
+        font-weight: 500;
+      }
+      p {
+        margin-top: 15px;
+        padding: 1rem 5rem 1rem 5rem;
+        font-size: 1.1rem;
+        color: #b1b4bd;
+        line-height: 1.4;
+        text-align: justify;
+      }
+    }
   }
 }
