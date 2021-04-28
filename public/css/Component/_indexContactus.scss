@@ -1,0 +1,114 @@
+#contact {
+  p {
+    margin-top: 15px;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.1rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  h2 {
+    color: #7d90c9;
+  }
+  .contact-right {
+    min-height: 750px;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.9))
+    );
+    background-image: linear-gradient(
+        180deg,
+        rgba(12, 32, 59, 0.55),
+        rgba(12, 32, 59, 0.75)
+      ),
+      url("/img/contact.jpg");
+    background-position: 0px 0px, 100% 50%;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+  .contact-section {
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  .contact-left {
+    padding: 100px;
+    p {
+      padding: 0rem 3rem 0rem 0rem;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    #contact-form {
+      margin-top: 40px;
+      .form-control {
+        background-color: #2e353f;
+        border: none;
+        border-radius: 0.3rem;
+        box-shadow: none;
+        font-weight: 300;
+        outline: medium none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        line-height: 1, 2;
+        height: auto;
+        width: 100%;
+        color: #fff;
+        margin-bottom: 1rem;
+        transition: all 0.2s ease-in-out;
+        text-align: left;
+      }
+      .form-control:hover,
+      .form-control:focus {
+        box-shadow: none;
+        background-color: #293039;
+      }
+      textarea {
+        min-height: 8rem;
+      }
+      #valid-form {
+        background: #e74c3c;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 2rem;
+        border: none;
+        display: inline-block;
+      }
+      #valid-form:hover {
+        background: #00e2c0;
+      }
+    }
+  }
+  a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  strong {
+    font-weight: 700;
+  }
+  .phone-mail-link {
+    color: rgb(168, 130, 130);
+    font-weight: bold;
+  }
+  .phone-mail-link:hover {
+    color: rgb(230, 80, 80);
+  }
+  .copyright {
+    font-size: 0.8rem !important;
+    font-weight: 300;
+    line-height: 5rem;
+    margin-top: 100px;
+    .fa {
+      color: #e74c3c;
+    }
+  }
+}

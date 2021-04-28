@@ -1,0 +1,164 @@
+#team {
+  p {
+    margin-top: 15px;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.1rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  .detail {
+    min-height: 750px;
+    overflow: hidden;
+    .gallery {
+      min-height: 252px;
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+    }
+    .img-1 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img1.jpg");
+    }
+    .img-2 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img2.jpg");
+    }
+    .img-3 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img3.jpg");
+    }
+    .img-4 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img4.jpg");
+    }
+    .img-5 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img5.jpg");
+    }
+    .img-6 {
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(12, 32, 59, 0.9))
+      );
+      background-image: linear-gradient(
+          180deg,
+          rgba(12, 32, 59, 0.55),
+          rgba(12, 32, 59, 0.75)
+        ),
+        url("/img/img6.jpg");
+    }
+  }
+  .right-container {
+    padding: 50px;
+  }
+  .left-center-block {
+    .left-center-text {
+      .left-center-part {
+        display: table cell;
+        vertical-align: middle;
+        h2 {
+          font-weight: 500;
+          color: #7d90c9;
+        }
+        .team-section {
+          padding: 3rem 0rem 1rem 0rem;
+          font-size: 2.8rem;
+          font-weight: 500;
+        }
+        p {
+          padding: 0rem 2rem 1rem 0rem;
+          font-size: 1.1rem;
+          line-height: 1.4;
+          text-align: justify;
+        }
+        .block-team {
+          margin: 1rem 0 0;
+          .team-member {
+            width: 240px;
+            object-fit: fill;
+          }
+          h3 {
+            margin-top: 15px;
+            font-size: 1.4rem;
+          }
+          small {
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-style: italic;
+            color: red;
+            margin-bottom: 10px;
+          }
+          p {
+            padding: 0rem 3rem 0rem 0rem;
+          }
+          .social-media {
+            .fa {
+              margin: 4px;
+              font-size: 18px;
+              border: 1px solid #fff;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              padding-top: 5px;
+              color: #e74c3c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

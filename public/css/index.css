@@ -206,4 +206,244 @@ body {
   color: #e74c3c;
   padding: 3rem 5rem 1rem 1rem;
 }
+
+#team p {
+  margin-top: 15px;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.1rem;
+  color: #b1b4bd;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#team .detail {
+  min-height: 750px;
+  overflow: hidden;
+}
+
+#team .detail .gallery {
+  min-height: 252px;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+#team .detail .img-1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img1.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img1.jpg");
+}
+
+#team .detail .img-2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img2.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img2.jpg");
+}
+
+#team .detail .img-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img3.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img3.jpg");
+}
+
+#team .detail .img-4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img4.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img4.jpg");
+}
+
+#team .detail .img-5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img5.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img5.jpg");
+}
+
+#team .detail .img-6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img6.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img6.jpg");
+}
+
+#team .right-container {
+  padding: 50px;
+}
+
+#team .left-center-block .left-center-text .left-center-part {
+  display: table cell;
+  vertical-align: middle;
+}
+
+#team .left-center-block .left-center-text .left-center-part h2 {
+  font-weight: 500;
+  color: #7d90c9;
+}
+
+#team .left-center-block .left-center-text .left-center-part .team-section {
+  padding: 3rem 0rem 1rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+#team .left-center-block .left-center-text .left-center-part p {
+  padding: 0rem 2rem 1rem 0rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team {
+  margin: 1rem 0 0;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team .team-member {
+  width: 240px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team h3 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team small {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-style: italic;
+  color: red;
+  margin-bottom: 10px;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team p {
+  padding: 0rem 3rem 0rem 0rem;
+}
+
+#team .left-center-block .left-center-text .left-center-part .block-team .social-media .fa {
+  margin: 4px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  color: #e74c3c;
+}
+
+#contact p {
+  margin-top: 15px;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.1rem;
+  color: #b1b4bd;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#contact h2 {
+  color: #7d90c9;
+}
+
+#contact .contact-right {
+  min-height: 750px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/contact.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/contact.jpg");
+  background-position: 0px 0px, 100% 50%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+#contact .contact-section {
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+#contact .contact-left {
+  padding: 100px;
+}
+
+#contact .contact-left p {
+  padding: 0rem 3rem 0rem 0rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+#contact .contact-left #contact-form {
+  margin-top: 40px;
+}
+
+#contact .contact-left #contact-form .form-control {
+  background-color: #2e353f;
+  border: none;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 300;
+  outline: medium none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1, 2;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+}
+
+#contact .contact-left #contact-form .form-control:hover,
+#contact .contact-left #contact-form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #293039;
+}
+
+#contact .contact-left #contact-form textarea {
+  min-height: 8rem;
+}
+
+#contact .contact-left #contact-form #valid-form {
+  background: #e74c3c;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border: none;
+  display: inline-block;
+}
+
+#contact .contact-left #contact-form #valid-form:hover {
+  background: #00e2c0;
+}
+
+#contact a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#contact strong {
+  font-weight: 700;
+}
+
+#contact .phone-mail-link {
+  color: #a88282;
+  font-weight: bold;
+}
+
+#contact .phone-mail-link:hover {
+  color: #e65050;
+}
+
+#contact .copyright {
+  font-size: 0.8rem !important;
+  font-weight: 300;
+  line-height: 5rem;
+  margin-top: 100px;
+}
+
+#contact .copyright .fa {
+  color: #e74c3c;
+}
 /*# sourceMappingURL=index.css.map */
