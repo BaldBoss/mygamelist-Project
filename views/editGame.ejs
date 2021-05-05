@@ -20,7 +20,7 @@
             var src = jQuery(this).val();
             console.log(src)
             var drawPreview = true;
-            if(!src.match("^https?://(?:[a-z\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png|jpeg|webp)$") && src != "") {
+            if(!src.match("^https?://(?:[a-z\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png|jpeg|webp)$") && src == "") {
                 $("#warning").text("Must be an image");
                 return false;  
               } else {

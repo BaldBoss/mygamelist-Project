@@ -2,7 +2,19 @@ const express = require("express");
 const app = express();
 const mongoose =require("mongoose");
 const ejs = require("ejs");
+var session = require('express-session');
+var flash = require("connect-flash");
+
+
 //bodyparser
+
+app.use(session({
+    secret:'secret',
+    cookie: {maxAge:60000},
+    resave: false,
+    saveUninitialized:false
+}));
+app.use(flash());
 app.use(express.urlencoded({extended:true}));
 
 app.use(express.static(__dirname + '/public'));
@@ -28,7 +40,9 @@ app.set("view engine", "ejs");
 app.get("/gamelist",(req,res)=>{
     Game.find({}, function(err, game){
         res.render('gamelist',{
-            game: game});
+            game: game,
+        message: req.flash('message') 
+        });
     })
     
 });
@@ -42,7 +56,7 @@ app.get("/editGame/:id", function(req,res) {
             console.log(err);
         }else{
             console.log(game);
-
+           
             res.render('editGame',{
                 game: game
             })
@@ -60,6 +74,7 @@ app.post("/editGame/:id", function(req, res){
         if(err){
             res.redirect("edit/"+req.params.id);
         }else{
+            req.flash('message',req.body.game_Name+' Edit successfully')
             res.redirect("/gamelist")
         }
     })
@@ -76,6 +91,7 @@ app.post("/addGame", function(req,res){
             imgAddress: req.body.imgAddress
         })
         newGame.save();
+       
         res.redirect("/gamelist");
 })
 

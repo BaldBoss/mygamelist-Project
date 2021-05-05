@@ -60,6 +60,11 @@
   <form >
     <input class="form-control me-2  text-center" type="search" id="myInput" placeholder="Search For Game" aria-label="Search">
   </form>
+  <%if(message.length>0) { %>
+      <div class="alert alert-success">
+        <%= message %>
+      </div>
+    <% } %>
     <div class="container-warp">
       <div class="justify-content-center d-flex flex-wrap"id="cardSearch">
         <%for(var i=0; i<game.length;i++) { %>
