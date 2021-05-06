@@ -141,7 +141,8 @@ input[type="color"]:focus,
   margin-bottom: 30px;
   color: #26d63e;
 }
-.imgprev {
+.delay-1 {
+  animation-delay: 5s;
 }
 .footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

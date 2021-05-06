@@ -10,22 +10,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6d7ac25a30.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Search function jquery -->
     <script>
         $(document).ready(function(){
+          AOS.init();
           $("#myInput").on("keyup",function(){
             var value = $(this).val().toLowerCase();
             $("#cardSearch div").filter(function(){
               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
             })
           })
+          
+      
         })
     </script>
 </head>
 <body>
   <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" data-aos="fade-down">
         
             <a class="navbar-brand" href="/"><img src="/img/mygamelistLogo.png" width="80" height="80" alt="" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,23 +57,24 @@
         
       </nav>
   <!-- Header -->
-    <div class="banner">
+    <div class="banner" data-aos="fade-down">
       <h1 class="">Your Game List</h1>
       <p>Record All Your Game!!</p>
     </div>
   <!-- game list card -->
-  <form >
+  <form data-aos="fade-down" >
     <input class="form-control me-2  text-center" type="search" id="myInput" placeholder="Search For Game" aria-label="Search">
   </form>
   <%if(message.length>0) { %>
-      <div class="alert alert-success">
+    
+      <div class="alert alert-success text-center animate__animated animate__fadeOut animate__delay-5s" id="successMessage">
         <%= message %>
       </div>
     <% } %>
-    <div class="container-warp">
+    <div class="container-warp" >
       <div class="justify-content-center d-flex flex-wrap"id="cardSearch">
         <%for(var i=0; i<game.length;i++) { %>
-            <div class="card border-info mb-3 h-100" >
+            <div class="card border-info mb-3 h-100 ">
               <img class="card-img-top" src="<%= game[i].imgAddress %>" alt="Card image cap" height="400px">
               <div class="card-body card_body ">
                 <h5 class="card-title"><%= game[i].gameName %></h5>

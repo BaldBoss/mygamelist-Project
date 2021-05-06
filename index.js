@@ -91,7 +91,7 @@ app.post("/addGame", function(req,res){
             imgAddress: req.body.imgAddress
         })
         newGame.save();
-       
+        req.flash('message',req.body.gameTitle+' has been added successfully')
         res.redirect("/gamelist");
 })
 
@@ -101,6 +101,7 @@ app.get("/delete/:id",function(req, res){
         if(err){
             res.redirect("/gamelist")
         }else{
+            req.flash('message', 'game has been delete successfully')
             res.redirect("/gamelist")
         }
     })
