@@ -8,6 +8,7 @@ body {
   line-height: 20px;
   color: #fff;
   background-color: #323a45;
+  position: relative;
 }
 
 .header-background {
@@ -15,8 +16,20 @@ body {
   height: auto;
   min-height: 900px;
   padding-bottom: 70px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 69, 0.55)), to(rgba(50, 58, 69, 0.75))), url("/img/indexbanner.jpg");
-  background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.75)), url("/img/indexbanner.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(50, 58, 69, 0.55)),
+      to(rgba(50, 58, 69, 0.75))
+    ),
+    url("/img/indexbanner.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(50, 58, 69, 0.55),
+      rgba(50, 58, 69, 0.75)
+    ),
+    url("/img/indexbanner.jpg");
   background-position: 0px 0px, 100% 50%;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -28,7 +41,7 @@ body {
   overflow: visible;
   top: 0;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-fkex-direction: column;
@@ -82,35 +95,47 @@ body {
   margin-bottom: 8px;
   min-height: 100px;
   -webkit-animation: headerflyin 2s ease 0s 1 normal none;
-          animation: headerflyin 2s ease 0s 1 normal none;
+  animation: headerflyin 2s ease 0s 1 normal none;
 }
 
 @-webkit-keyframes headerflyin {
   0.0% {
     -webkit-transform: rotate(0) translate(-1000px);
-            transform: rotate(0) translate(-1000px);
+    transform: rotate(0) translate(-1000px);
   }
   100% {
     -webkit-transform: rotate(0) translate(0px);
-            transform: rotate(0) translate(0px);
+    transform: rotate(0) translate(0px);
   }
 }
 
 @keyframes headerflyin {
   0.0% {
     -webkit-transform: rotate(0) translate(-1000px);
-            transform: rotate(0) translate(-1000px);
+    transform: rotate(0) translate(-1000px);
   }
   100% {
     -webkit-transform: rotate(0) translate(0px);
-            transform: rotate(0) translate(0px);
+    transform: rotate(0) translate(0px);
   }
 }
 
 #aboutus .row .column-left {
   min-height: 750px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/aboutus.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/aboutus.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/aboutus.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/aboutus.jpg");
   background-position: 0px 0px, 100% 50%;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -151,8 +176,20 @@ body {
 
 #services .service-right {
   min-height: 750px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/services.jpeg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/services.jpeg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/services.jpeg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/services.jpeg");
   background-position: 0px 0px, 100% 50%;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -229,33 +266,105 @@ body {
 }
 
 #team .detail .img-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img1.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img1.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img1.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img1.jpg");
 }
 
 #team .detail .img-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img2.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img2.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img2.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img2.jpg");
 }
 
 #team .detail .img-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img3.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img3.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img3.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img3.jpg");
 }
 
 #team .detail .img-4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img4.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img4.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img4.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img4.jpg");
 }
 
 #team .detail .img-5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img5.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img5.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img5.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img5.jpg");
 }
 
 #team .detail .img-6 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/img6.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/img6.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/img6.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/img6.jpg");
 }
 
 #team .right-container {
@@ -289,10 +398,15 @@ body {
   margin: 1rem 0 0;
 }
 
-#team .left-center-block .left-center-text .left-center-part .block-team .team-member {
+#team
+  .left-center-block
+  .left-center-text
+  .left-center-part
+  .block-team
+  .team-member {
   width: 240px;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 #team .left-center-block .left-center-text .left-center-part .block-team h3 {
@@ -312,7 +426,13 @@ body {
   padding: 0rem 3rem 0rem 0rem;
 }
 
-#team .left-center-block .left-center-text .left-center-part .block-team .social-media .fa {
+#team
+  .left-center-block
+  .left-center-text
+  .left-center-part
+  .block-team
+  .social-media
+  .fa {
   margin: 4px;
   font-size: 18px;
   border: 1px solid #fff;
@@ -339,8 +459,20 @@ body {
 
 #contact .contact-right {
   min-height: 750px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.55)), to(rgba(12, 32, 59, 0.75))), url("/img/contact.jpg");
-  background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.75)), url("/img/contact.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(12, 32, 59, 0.55)),
+      to(rgba(12, 32, 59, 0.75))
+    ),
+    url("/img/contact.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 32, 59, 0.55),
+      rgba(12, 32, 59, 0.75)
+    ),
+    url("/img/contact.jpg");
   background-position: 0px 0px, 100% 50%;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -374,7 +506,7 @@ body {
   border: none;
   border-radius: 0.3rem;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-weight: 300;
   outline: medium none;
   padding: 1rem 2rem;
@@ -392,7 +524,7 @@ body {
 #contact .contact-left #contact-form .form-control:hover,
 #contact .contact-left #contact-form .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #293039;
 }
 
@@ -446,8 +578,99 @@ body {
 #contact .copyright .fa {
   color: #e74c3c;
 }
-.footer{
+.footer {
   height: 50px;
   background-color: #293039;
+}
+.loader_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #323a45;
+  z-index: 9999;
+}
+.loader {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  transform: translate(-50%, -20%);
+}
+.circle-loader {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle 0.5s alternate infinite ease;
+}
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+.circle-loader:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.circle-loader:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow 0.5s alternate infinite ease;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.stop-scrolling {
+  overflow: hidden;
 }
 /*# sourceMappingURL=index.css.map */
